@@ -75,3 +75,36 @@ Além disso, também foi disponibilizado o dicionário de dados:
 | Product Status                   | Produto em estoque (1 = sim, 0 = não)                        |
 | Shipping date (DateOrders)       | Data e hora exatas do envio do pedido                        |
 | Shipping Mode                    | Método de envio do pedido                                    | 
+
+# Estratégia da Solução
+
+Como estratégia para a solução dos problemas, definimos as seguintes etapas:
+
+- **1. Entendimento do Negócio:** essa etapa é basicamente o que vimos até aqui: especificamos o problema de negócio, entendemos a necessidade do cliente e definimos os objetivos.
+
+- **2. Entendimento dos Dados:** aqui, iremos realizar um primeiro tratamento nos dados, identificando valores ausentes e excluindo variáveis irrelevantes e duplicadas. Além disso, também iremos realizar uma análise detalhada em cada variável a fim de entender o que elas representam. Por fim, realizaremos a seleção das melhores variáveis para a modelagem.
+
+- **3. Pré-Processamento dos Dados**: nesta etapa, nosso objetivo é preparar os dados da etapa anterior para aplicação do modelo preditivo. Aqui, iremos realizar a divisão do conjunto em treino e teste, a codificação das variáveis, e a padronização dos dados.
+
+- **4. Modelagem Preditiva**: focaremos em solucionar o primeiro problema de negócio da empresa através da criação e avaliação de um modelo preditivo.
+
+- **5. Segmentação de Clientes**: através da análise RFM, iremos segmentar os clientes da empresa.
+
+- **6. Conclusões Finais**: por fim, entregaremos o resultado final do projeto.
+
+# TOP 3 Insights 
+
+**P3. Qual a categoria de produtos registrou o maior faturamento?**  
+- A categoria *Fishing*, ou seja, produtos de pesca, registrou o maior faturamento total. 
+- A categoria *Computers* registrou o maior faturamento médio.
+![](figures/P3.png) 
+
+**P4. Qual o dia da semana e mês que registraram o maior faturamento?**  
+- Sábado(5) é o dia da semana responsável pelo maior faturamento total e médio.
+- Janeiro é o mês que registrou o maior faturamento total, e outubro, o maior faturamento médio. 
+![](figures/P4.png)
+
+**P7. Qual a região e a categoria de produtos que possuem o maior número de pedidos suspeitos de fraude?**  
+- A Europa Ocidental e a América Central foram as regiões que registraram os maiores números de pedidos suspeitos de fraude.
+- Em relação as categorias, Cleats, é o item que registrou o maior número de pedidos suspeitos de fraude.
+![](figures/P7.png)
