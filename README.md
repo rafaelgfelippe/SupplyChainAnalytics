@@ -144,7 +144,7 @@ Para a segmentação dos clientes da GO Market utilizamos a análise RFE. Essa a
 - ***Frequency (frequência):*** quanto maior for o número de compras de um cliente, maior também será sua pontuação neste quesito.
 - ***Monetary (monetário):*** quanto maior for o gasto do cliente em compras, maior a pontuação.
 
-Após a análise, os clientes foram divididos em nove grupos, conforme a imagem abaixo.
+Após a análise, os clientes foram divididos em oito grupos, conforme a imagem abaixo.
 ![](figures/RFE.png)
 
 Vale destacar os grupos: 
