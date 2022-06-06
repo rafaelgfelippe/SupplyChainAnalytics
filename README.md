@@ -1,1 +1,1 @@
-![](figures/GOMarket.png)
+![](figures/GOmarket.png)
