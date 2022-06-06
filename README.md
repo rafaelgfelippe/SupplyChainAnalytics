@@ -106,5 +106,5 @@ Como estratégia para a solução dos problemas, definimos as seguintes etapas:
 
 **P7. Qual a região e a categoria de produtos que possuem o maior número de pedidos suspeitos de fraude?**  
 - A Europa Ocidental e a América Central foram as regiões que registraram os maiores números de pedidos suspeitos de fraude.
-- Em relação as categorias, Cleats, é o item que registrou o maior número de pedidos suspeitos de fraude.
+- Em relação as categorias, *Cleats*, é o item que registrou o maior número de pedidos suspeitos de fraude.
 ![](figures/P7.png)
