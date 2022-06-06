@@ -108,3 +108,33 @@ Como estratégia para a solução dos problemas, definimos as seguintes etapas:
 - A Europa Ocidental e a América Central foram as regiões que registraram os maiores números de pedidos suspeitos de fraude.
 - Em relação as categorias, *Cleats*, é o item que registrou o maior número de pedidos suspeitos de fraude.
 ![](figures/P7.png)
+
+# Modelagem Preditiva
+
+Como forma de selecionar o melhor algoritmo para o problema de negócio, utilizamos a métrica *f1-score* para treinar e avaliar diferentes modelos. 
+
+| Modelo                      | ***f1-score***   |
+|:---------------------------:|:----------------:|
+| AdaBoostClassifier	        | 0.668033   	     | 
+| ExtraTreesClassifier	      | 0.668033   	     |  	
+| GradientBoostingClassifier  | 0.668033   	     |
+| LogisticRegression   	      | 0.668033   	     |	
+| RandomForestClassifier      | 0.668033   	     |
+| XGBoost                     | 0.668033   	     |
+
+Após a seleção do *ExtraTreesClassifier*, dois modelos foram criados conforme abaixo: 
+
+- ***model***: Com hiperparâmetros originais
+- ***model2***: Com otimização dos hiperparâmetros
+
+O desempenho dos modelos foram os seguintes: 
+
+| ***Model***   | ***accuracy***  | ***precision***   | ***recall***   | ***f1-score***   |
+|:-------------:|:---------------:|:-----------------:|:--------------:|:-----------------|
+| model         |                 |                   |                |                  |
+| model2        |                 |                   |                |                  |
+
+Sendo assim, o ***model2*** foi escolhido para a entrega final.
+
+# Segmentação de Clientes
+
