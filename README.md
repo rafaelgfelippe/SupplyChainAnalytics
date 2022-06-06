@@ -82,15 +82,17 @@ Como estratégia para a solução dos problemas, definimos as seguintes etapas:
 
 - **1. Entendimento do Negócio:** essa etapa é basicamente o que vimos até aqui: especificamos o problema de negócio, entendemos a necessidade do cliente e definimos os objetivos.
 
-- **2. Entendimento dos Dados:** aqui, iremos realizar um primeiro tratamento nos dados, identificando valores ausentes e excluindo variáveis irrelevantes e duplicadas. Além disso, também iremos realizar uma análise detalhada em cada variável a fim de entender o que elas representam. Por fim, realizaremos a seleção das melhores variáveis para a modelagem.
+- **2. Entendimento dos Dados:** aqui, iremos realizar um primeiro tratamento nos dados, identificando valores ausentes e excluindo variáveis irrelevantes. Além disso, também iremos elaborar perguntas de negócio a fim de extrair alguns insights sobre os dados.
 
-- **3. Pré-Processamento dos Dados**: nesta etapa, nosso objetivo é preparar os dados da etapa anterior para aplicação do modelo preditivo. Aqui, iremos realizar a divisão do conjunto em treino e teste, a codificação das variáveis, e a padronização dos dados.
+- **3. Engenharia de Atributos:** utilizando as informações já existentes no conjunto de dados, criaremos uma nova variável a fim de resumir os dados e facilitar o treinamento dos algoritmos. 
 
-- **4. Modelagem Preditiva**: focaremos em solucionar o primeiro problema de negócio da empresa através da criação e avaliação de um modelo preditivo.
+- **4. Pré-Processamento dos Dados:** nesta etapa, nosso objetivo é preparar os dados da etapa anterior para aplicação do modelo preditivo. Aqui, iremos realizar a codificação das variáveis e a padronização dos dados.
 
-- **5. Segmentação de Clientes**: através da análise RFM, iremos segmentar os clientes da empresa.
+- **5. Modelagem Preditiva:** focaremos em solucionar o primeiro problema de negócio da empresa através da criação e avaliação de diversos algoritmos de classificação.
 
-- **6. Conclusões Finais**: por fim, entregaremos o resultado final do projeto.
+- **6. Segmentação de Clientes**: através da análise RFM, iremos segmentar os clientes da empresa.
+
+- **7. Conclusões Finais:** por fim, entregaremos o resultado final do projeto.
 
 # TOP 3 Insights 
 
