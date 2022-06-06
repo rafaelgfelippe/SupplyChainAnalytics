@@ -113,7 +113,7 @@ Como estratégia para a solução dos problemas, definimos as seguintes etapas:
 
 Como forma de selecionar o melhor algoritmo para o problema de negócio, utilizamos a métrica *f1-score* para treinar e avaliar diferentes modelos. 
 
-| Modelo                      | ***f1-score***   |
+| ***Model***                 | ***f1-score***   |
 |:---------------------------:|:----------------:|
 | AdaBoostClassifier	        | 0.668033   	     | 
 | ExtraTreesClassifier	      | 0.668033   	     |  	
