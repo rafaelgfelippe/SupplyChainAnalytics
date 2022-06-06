@@ -153,3 +153,13 @@ Vale destacar os grupos:
 - **Promissor**: clientes que possuem boas chances de se tornarem os melhores clientes.
 
 **OBS:** No notebook há maiores detalhes explicando como a segmentação foi realizada.
+
+# Conclusões Finais
+
+
+
+# Autor
+
+Rafael Felippe  
+
+[<img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>](https://www.linkedin.com/in/rafaelfelippe/)
