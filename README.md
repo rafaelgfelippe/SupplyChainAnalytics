@@ -84,9 +84,9 @@ Como estratégia para a solução dos problemas, definimos as seguintes etapas:
 
 - **2. Entendimento dos Dados:** aqui, iremos realizar um primeiro tratamento nos dados, identificando valores ausentes e excluindo variáveis irrelevantes. Além disso, também iremos elaborar perguntas de negócio a fim de extrair alguns insights sobre os dados.
 
-- **3. Engenharia de Atributos:** utilizando as informações já existentes no conjunto de dados, criaremos uma nova variável a fim de resumir os dados e facilitar o treinamento dos algoritmos. 
+- **3. Engenharia de Atributos:** utilizando as informações já existentes no conjunto de dados, criaremos uma nova variável a fim de resumir os dados e facilitar o aprendizado dos algoritmos. 
 
-- **4. Pré-Processamento dos Dados:** nesta etapa, nosso objetivo é preparar os dados da etapa anterior para aplicação do modelo preditivo. Aqui, iremos realizar a codificação das variáveis e a padronização dos dados.
+- **4. Pré-Processamento dos Dados:** nesta etapa, nosso objetivo é preparar os dados da etapa anterior para aplicação da modelagem preditiva. Aqui, iremos realizar a codificação das variáveis e a padronização dos dados.
 
 - **5. Modelagem Preditiva:** focaremos em solucionar o primeiro problema de negócio da empresa através da criação e avaliação de diversos algoritmos de classificação.
 
