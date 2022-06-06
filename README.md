@@ -25,6 +25,8 @@ Em relação ao conjunto de dados, as seguintes informações foram disponibiliz
 
 Além disso, também foi disponibilizado o dicionário de dados:
 
+**OBS:** os significados dos valores presentes em cada variável estão disponíveis no notebook.
+
 | Variáveis                        | Descrição                                                    |
 | -------------------------------- | ------------------------------------------------------------ |
 | Type                             | Tipo do pagamento realizado pelo cliente                     |                          
