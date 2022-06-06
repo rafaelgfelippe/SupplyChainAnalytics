@@ -111,7 +111,7 @@ Como estratégia para a solução dos problemas, definimos as seguintes etapas:
 
 # Modelagem Preditiva
 
-Como forma de selecionar o melhor algoritmo para o problema de negócio, utilizamos a métrica *f1-score* para treinar e avaliar diferentes modelos. 
+Como forma de selecionar o melhor algoritmo para a realizar a classificação dos pedidos, utilizamos a métrica *f1-score* para treinar e avaliar diferentes modelos. 
 
 | ***Model***                 | ***f1-score***   |
 |:---------------------------:|:----------------:|
@@ -138,3 +138,18 @@ Sendo assim, o ***model2*** foi escolhido para a entrega final.
 
 # Segmentação de Clientes
 
+Para a segmentação dos clientes da GO Market utilizamos a análise RFE. Essa análise é uma estratégia para estimar o valor de um cliente, com base em três váriaveis:
+
+- ***Recency (recência):*** quanto mais recente tiver sido a última compra de um cliente, mais pontos ele recebe aqui.
+- ***Frequency (frequência):*** quanto maior for o número de compras de um cliente, maior também será sua pontuação neste quesito.
+- ***Monetary (monetário):*** quanto maior for o gasto do cliente em compras, maior a pontuação.
+
+Após a análise, os clientes foram divididos em nove grupos, conforme a imagem abaixo.
+![](figures/RFE.png)
+
+Vale destacar os grupos: 
+
+- **Em Alerta**: clientes que costumavam fazer pedidos em grandes quantidades e com muita frequência, mas que agora, não realizam pedidos há muito tempo.
+- **Promissor**: clientes que possuem boas chances de se tornarem os melhores clientes.
+
+**OBS:**: No notebook há maiores detalhes explicando como a segmentação foi realizada.
