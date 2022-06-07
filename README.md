@@ -143,11 +143,6 @@ Para a segmentação dos clientes da GO Market utilizamos a análise RFE. Essa a
 Após a análise, os clientes foram divididos em oito grupos, conforme a imagem abaixo.
 ![](figures/RFM.png)
 
-Vale destacar os grupos: 
-
-- **Em Alerta**: clientes que costumavam fazer pedidos em grandes quantidades e com muita frequência, mas que agora, não realizam pedidos há muito tempo.
-- **Promissor**: clientes que possuem boas chances de se tornarem os melhores clientes.
-
 **OBS:** No notebook há maiores detalhes explicando como a segmentação foi realizada.
 
 # Conclusões Finais
