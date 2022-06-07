@@ -117,26 +117,20 @@ Como forma de selecionar o melhor algoritmo para a realizar a classificação do
 
 | ***Model***                 | ***f1-score***   |
 |:---------------------------:|:----------------:|
-| AdaBoostClassifier	        | 0.668033   	     | 
-| ExtraTreesClassifier	      | 0.668033   	     |  	
-| GradientBoostingClassifier  | 0.668033   	     |
-| LogisticRegression   	      | 0.668033   	     |	
-| RandomForestClassifier      | 0.668033   	     |
-| XGBoost                     | 0.668033   	     |
+| AdaBoostClassifier	        | 0.665057   	     | 
+| ExtraTreesClassifier	      | 0.691262   	     |  	
+| GradientBoostingClassifier  | 0.663232   	     |
+| LogisticRegression   	      | 0.662280   	     |	
+| RandomForestClassifier      | 0.691049   	     |
+| XGBoost                     | 0.671849   	     |
 
-Após a seleção do *ExtraTreesClassifier*, dois modelos foram criados conforme abaixo: 
-
-- ***model***: Com hiperparâmetros originais
-- ***model2***: Com otimização dos hiperparâmetros
-
-O desempenho dos modelos foram os seguintes: 
+Após a seleção do *ExtraTreesClassifier*, o modelo treinado obteve as seguintes métricas: 
 
 | ***Model***   | ***accuracy***  | ***precision***   | ***recall***   | ***f1-score***   |
 |:-------------:|:---------------:|:-----------------:|:--------------:|:-----------------|
-| model         |                 |                   |                |                  |
-| model2        |                 |                   |                |                  |
+| classe 0      | 0.68            | 0.63              | 0.68           | 0.66             |
+| classe 1      | 0.68            | 0.72              | 0.67           | 0.69             |
 
-Sendo assim, o ***model2*** foi escolhido para a entrega final.
 
 # Segmentação de Clientes
 
@@ -158,7 +152,25 @@ Vale destacar os grupos:
 
 # Conclusões Finais
 
+Nsse projeto, tinhamos dois objetivos: auxiliar a GO Market a identificar pedidos que possuem risco de atraso e realizar a segementação de seus clientes.
 
+Para alcançar o primeiro objetivo, identificamos a necessidade da criação de um modelo preditivo. Durante as etapas do projeto, foi identificado uma grande quantidade de variáveis irrelevantes e com informações duplicadas no conjunto de dados disponibilizado pela empresa. Sendo assim, realizamos um tratamento nesses dados, onde conseguimos filtrar as variáveis mais representativas.
+
+Já na fase da modelagem, após testar diversos algoritmos de classificação, o algoritmo escolhido foi o *ExtraTreesClassifier*. Para um primeiro ciclo do projeto, conseguimos um desempenho razoável, conforme as métricas abaixo:
+
+- **Accuracy:** 0.68
+- **Precision:** 0.72
+- **Recall:** 0.67
+- **F1-score:** 0.69
+
+Um *recall* de 0.67 para a classe positiva, significa que implementando o nosso modelo, a GO Market conseguiria identificar 67% dos pedidos que atrasaram, e assim, tomar as devidas precauções para evitar esses atrasos. Ainda vale ressaltar que para um próximo ciclo desse projeto, poderiamos testar outros métodos de pré-processamento dos dados, visando aumentar a performance do modelo.
+
+Passando para o segundo problema de negócio, na segmentação dos clientes, utilizamos a análise RFM. Essa é uma boa alternativa para casos onde o conjunto de dados é muito grande e o poder computacional disponível é insuficiente para processá-los. Após a análise, os clientes foram segmentados em 8 grupos diferentes, com destaque para dois deles:
+
+- **Em Alerta:** clientes que costumavam fazer pedidos em grandes quantidades e com frequência, mas que agora, não realizam pedidos há muito tempo.
+- **Promissor:** clientes que compram com bastante frequência e em grandes quantidades, possuem boas chances de se tornarem os melhores clientes.
+
+Agora, a GO Market já pode direcionar ações para evitar os atrasos dos pedidos e fidelizar ainda mais seus clientes!
 
 # Autor
 
