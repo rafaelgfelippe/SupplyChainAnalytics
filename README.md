@@ -35,17 +35,17 @@ Além disso, também foi disponibilizado o dicionário de dados:
 | Benefit per order                | Valor do lucro/prejuízo do pedido                            | 
 | Sales per customer               | Valor total do pedido após o desconto                        |
 | Delivery Status                  | Status da entrega do pedido                                  |
-| Late_delivery_risk               | Risco de atraso na entraga do pedido (1 = sim, 0 = não)      |
+| Late_delivery_risk               | Risco de atraso na entrega do pedido (1 = sim, 0 = não)      |
 | Category Id                      | Código de identificação da categoria do produto              |
 | Category Name                    | Descrição da categoria do produto                            |
-| Customer Email                   | Email do cliente                                             |
+| Customer Email                   | E-mail do cliente                                            |
 | Customer Fname                   | Nome do cliente                                              |
 | Customer Id                      | ID do cliente                                                |
 | Customer Lname                   | Sobrenome do cliente                                         | 
 | Customer Password                | Senha do cliente                                             |
 | Customer Segment                 | Categoria de cliente                                         | 
 | Latitude                         | Latitude da localização do cliente                           |
-| Longitude                        | Longitude da localização do clinte                           |
+| Longitude                        | Longitude da localização do cliente                          |
 | Market                           | "Mercado" para onde o pedido será enviado                    | 
 | Order City                       | Cidade de destino do pedido                                  |
 | Order Country                    | País de destino do pedido                                    |
@@ -102,7 +102,7 @@ Como estratégia para a solução dos problemas, definimos as seguintes etapas:
 ![](figures/P3.png) 
 
 **P4. Qual o dia da semana e mês que registraram o maior faturamento?**  
-- Sábado(5) é o dia da semana responsável pelo maior faturamento total e médio.
+- Sábado (5) é o dia da semana responsável pelo maior faturamento total e médio.
 - Janeiro é o mês que registrou o maior faturamento total, e outubro, o maior faturamento médio. 
 ![](figures/P4.png)
 
@@ -134,7 +134,7 @@ Após a seleção do *ExtraTreesClassifier*, o modelo treinado obteve as seguint
 
 # Segmentação de Clientes
 
-Para a segmentação dos clientes da GO Market utilizamos a análise RFE. Essa análise é uma estratégia para estimar o valor de um cliente, com base em três váriaveis:
+Para a segmentação dos clientes da GO Market utilizamos a análise RFE. Essa análise é uma estratégia para estimar o valor de um cliente, com base em três variáveis:
 
 - ***Recency (recência):*** quanto mais recente tiver sido a última compra de um cliente, mais pontos ele recebe aqui.
 - ***Frequency (frequência):*** quanto maior for o número de compras de um cliente, maior também será sua pontuação neste quesito.
@@ -152,7 +152,7 @@ Vale destacar os grupos:
 
 # Conclusões Finais
 
-Nsse projeto, tinhamos dois objetivos: auxiliar a GO Market a identificar pedidos que possuem risco de atraso e realizar a segementação de seus clientes.
+Nesse projeto, tínhamos dois objetivos: auxiliar a GO Market a identificar pedidos que possuem risco de atraso e realizar a segmentação de seus clientes.
 
 Para alcançar o primeiro objetivo, identificamos a necessidade da criação de um modelo preditivo. Durante as etapas do projeto, foi identificado uma grande quantidade de variáveis irrelevantes e com informações duplicadas no conjunto de dados disponibilizado pela empresa. Sendo assim, realizamos um tratamento nesses dados, onde conseguimos filtrar as variáveis mais representativas.
 
@@ -163,7 +163,7 @@ Já na fase da modelagem, após testar diversos algoritmos de classificação, o
 - **Recall:** 0.67
 - **F1-score:** 0.69
 
-Um *recall* de 0.67 para a classe positiva, significa que implementando o nosso modelo, a GO Market conseguiria identificar 67% dos pedidos que atrasaram, e assim, tomar as devidas precauções para evitar esses atrasos. Ainda vale ressaltar que para um próximo ciclo desse projeto, poderiamos testar outros métodos de pré-processamento dos dados, visando aumentar a performance do modelo.
+Um *recall* de 0.67 para a classe positiva, significa que implementando o nosso modelo, a GO Market conseguiria identificar 67% dos pedidos que atrasaram, e assim, tomar as devidas precauções para evitar esses atrasos. Ainda vale ressaltar que para um próximo ciclo desse projeto, poderíamos testar outros métodos de pré-processamento dos dados, visando aumentar a performance do modelo.
 
 Passando para o segundo problema de negócio, na segmentação dos clientes, utilizamos a análise RFM. Essa é uma boa alternativa para casos onde o conjunto de dados é muito grande e o poder computacional disponível é insuficiente para processá-los. Após a análise, os clientes foram segmentados em 8 grupos diferentes, com destaque para dois deles:
 
